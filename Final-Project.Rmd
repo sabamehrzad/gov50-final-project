@@ -1,0 +1,17 @@
+---
+title: "Final-Project"
+author: "Saba Mehrzad"
+date: "2023-09-28"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# Some ideas for the project:
+# Look at abortion rates since the Supreme Court struck down Dobbs v. Jackson
+# Looking at voting patterns after the Dobbs v. Jackson decision 
+```
+
