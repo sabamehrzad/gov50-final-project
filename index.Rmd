@@ -35,7 +35,7 @@ Potential confounding variables when analyzing the duration of civil war include
 
 # Data Cleaning and Exploratory Data Analysis
 
-Filtering of the dataset to countries that had experienced civil wars between 1980 and 1999
+Filtering of the dataset to countries that had experienced civil wars between 1980 and 1999.
 
 ```{r}
 war_periods <- civil_war |>
@@ -52,6 +52,7 @@ war_periods
 ```
 
 Creation of the total duration and cumulative duration values
+
 For the regression and results, I only used the cumulative duration variable. However, the total_duration calculates the total duration of the civil war in each country. Total_duration could be useful for future analysis. 
 
 ```{r}
@@ -69,7 +70,7 @@ summary(duration$polity2)
 ```
 
 Imputations of Missing Polity Score Values
-Here, I imputed the average polity score of the country associated with the missing value
+Here, I imputed the average polity score of the country associated with the missing value.
 
 ```{r}
 average_polity <- aggregate(polity2 ~ country, data = duration, FUN = mean)
